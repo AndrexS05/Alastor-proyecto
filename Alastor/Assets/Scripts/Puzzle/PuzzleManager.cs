@@ -14,6 +14,11 @@ public class PuzzleManager : MonoBehaviour
 
     private bool puzzleResuelto = false;
 
+    void Start()
+    {
+        panelGameOver.SetActive(false);
+    }
+
     void Update()
     {
         if (!puzzleResuelto)
