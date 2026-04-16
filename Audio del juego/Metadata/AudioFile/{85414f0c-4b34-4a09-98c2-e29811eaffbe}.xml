@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{85414f0c-4b34-4a09-98c2-e29811eaffbe}">
+		<property name="assetPath">
+			<value>Latido1.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>22.0499992</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>1.0662585034013605</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{f69d9751-7456-4aed-a2fd-431524691d63}</destination>
+		</relationship>
+	</object>
+</objects>
