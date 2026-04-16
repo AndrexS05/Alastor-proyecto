@@ -1,18 +1,16 @@
-using System.Collections;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class ArrastrarSoltar : MonoBehaviour
 {
-    [Header("Objeto que se arrastra")]
+    [Header("Objeto a arrastrar")]
     public GameObject llaveArrastrable;
 
-    [Header("Posición correcta donde debe soltarse")]
+    [Header("Posición donde soltar")]
     public GameObject posicionObjetivo;
 
     [Header("Distancia máxima para encajar")]
-    public float distanciaEncaje = 50f;
+    public float distanciaEncaje = 40f;
 
     [Header("Estado del objeto")]
     public bool bloqueado = false;
@@ -28,7 +26,7 @@ public class ArrastrarSoltar : MonoBehaviour
     {
         if (!bloqueado)
         {
-            llaveArrastrable.transform.position = Input.mousePosition;
+            llaveArrastrable.transform.position = Mouse.current.position.ReadValue();
         }
     }
 
